@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Broken Translator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- added google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="./index.js"></script>
+  <style>
+    /* added css from here */
+    body {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(CI_Background.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    body * {
+      font-family: 'Mulish', sans-serif;
+      font-size: 1rem;
+    }
+
+    #content {
+      width: 90vh;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: solid;
+      margin: 5vh;
+      background-color: #7459fe;
+      color: #fff;
+      clear: both;
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: #9480ff;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+
+    #text-input {
+      height: 30vh;
+      width: 50vh;
+      background-position: top;
+      margin-top: 5vh;
+    }
+
+    #text-output {
+      height: 30vh;
+      width: 50vh;
+      background-color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="content">
+    <textarea id="text-input" rows="5" placeholder="Введите текст"></textarea>
+    <button id="transform-button" type="button">Преобразовать</button>
+		<div id="text-output">AAA</div>
+  </div>
+  </body>
+</html>

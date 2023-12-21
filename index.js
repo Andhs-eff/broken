@@ -1,5 +1,6 @@
 const inputText = document.getElementById("text-input");
 const transformButton = document.getElementById("transform-button");
+const clearButton = document.getElementById("clear-button");
 const outputText = document.getElementById("text-output");
 
 let sourceText;
@@ -18,6 +19,10 @@ transformButton.onclick = async () => {
 		sourceText = transText;
 	}
 	outputText.textContent = transText;
+}
+
+clearButton.onclick = () => {
+	inputText.value = "";
 }
 
 async function googleTranslate(sourceLang, targetLang, sourceText) {

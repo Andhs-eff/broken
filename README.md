@@ -6,6 +6,10 @@ This project is a simple web application that translates text through a series o
 
 To run this project, simply open the `index.html` file in your web browser.
 
+### Via GitHub Pages
+The project can also be accessed online via GitHub Pages. You can access it using the following link:
+`https://andhs-eff.github.io/broken/`
+
 ## Project Structure
 
 *   `index.html`: The main HTML file that defines the structure of the web page.
